@@ -7,6 +7,9 @@ import springbankingapp.bankingapp.mapper.AccountMapper;
 import springbankingapp.bankingapp.repository.AccountRepo;
 import springbankingapp.bankingapp.service.AccountService;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 //creates a springbean for AccountServiceImpl class
 @Service
 public class AccountServiceImpl implements AccountService {
@@ -27,10 +30,47 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public AccountDto getAccountById(Long Id) {
+    public AccountDto getAccountById(Long id) {
         Account account = accountRepo
-                .findById(Id)
+                .findById(id)
                 .orElseThrow(()-> new RuntimeException("Account does not exist"));
         return AccountMapper.mapToAccountDto(account);
+    }
+
+    @Override
+    public AccountDto deposit(Long id, double amount) {
+
+        Account account = accountRepo
+                .findById(id)
+                .orElseThrow(()-> new RuntimeException("Account does not exist"));
+        double total = account.getBalance() + amount;
+        account.setBalance(total);
+        Account savedAccount = accountRepo.save(account);
+        return AccountMapper.mapToAccountDto(savedAccount);
+    }
+
+    @Override
+    public AccountDto withdraw(Long id, double amount) {
+
+        Account account = accountRepo
+                .findById(id)
+                .orElseThrow(()-> new RuntimeException("Account does not exist"));
+
+        if (account.getBalance()< amount){
+            throw new RuntimeException("Insufficient funds");
+        }
+
+        double total = account.getBalance() - amount;
+        account.setBalance(total);
+        Account savedAccount=  accountRepo.save(account);
+        return AccountMapper.mapToAccountDto(savedAccount);
+
+    }
+
+    @Override
+    public List<AccountDto> getAllAccounts() {
+        List<Account> accounts =  accountRepo.findAll();
+        return accounts.stream().map((account) -> AccountMapper.mapToAccountDto(account))
+                .collect(Collectors.toList());
     }
 }
