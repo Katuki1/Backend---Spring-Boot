@@ -55,8 +55,8 @@ public class AccountController {
     //Get All Accounts REST API
     @GetMapping
     public ResponseEntity<List<AccountDto>>getAllAccounts(){
-        List<AccountDto> accounts = accountService.getAllAccounts();
-        return ResponseEntity.ok(accounts);
+        List<AccountDto> accountdto = accountService.getAllAccounts();
+        return ResponseEntity.ok(accountdto);
     }
 
     //Delete Account REST API
