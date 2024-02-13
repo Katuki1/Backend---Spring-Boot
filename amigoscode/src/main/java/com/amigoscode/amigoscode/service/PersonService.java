@@ -15,7 +15,7 @@ public class PersonService {
     private final PersonDto personDto;
 
     @Autowired
-    public PersonService(@Qualifier("fakePerson") PersonDto personDto) {
+    public PersonService(@Qualifier("mysql") PersonDto personDto) {
         this.personDto = personDto;
     }
 
