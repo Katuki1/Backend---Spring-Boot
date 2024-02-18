@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b62a7959-d892-4632-bfd7-42fd9d7363a9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../microservices/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/.idea/microservices.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/src/main/java/com/microservices/order_service/OrderServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/src/main/java/com/microservices/order_service/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/src/main/java/com/microservices/order_service/dto/OrderItemsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/src/main/java/com/microservices/order_service/dto/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/src/main/java/com/microservices/order_service/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/src/main/java/com/microservices/order_service/model/OrderItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/src/main/java/com/microservices/order_service/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/order_service/src/test/java/com/microservices/order_service/OrderServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/src/main/java/com/microservices/product_service/ProductServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/src/main/java/com/microservices/product_service/Service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/src/main/java/com/microservices/product_service/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/src/main/java/com/microservices/product_service/dto/ProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/src/main/java/com/microservices/product_service/dto/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/src/main/java/com/microservices/product_service/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/src/main/java/com/microservices/product_service/repository/ProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservices/product_service/src/test/java/com/microservices/product_service/ProductServiceApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2cVLHRXtC8IkKSeCAvpxoHLZTm0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.InventoryServiceApplication.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Backend---Spring-Boot/microservices",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="inventory_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.inventory_service.InventoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b62a7959-d892-4632-bfd7-42fd9d7363a9" name="Changes" comment="" />
+      <created>1708191711299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708191711299</updated>
+      <workItem from="1708191714550" duration="2029000" />
+      <workItem from="1708229769767" duration="9223000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
