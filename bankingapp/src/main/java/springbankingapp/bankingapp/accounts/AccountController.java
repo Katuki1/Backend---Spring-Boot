@@ -1,11 +1,9 @@
-package springbankingapp.bankingapp.controller;
+package springbankingapp.bankingapp.accounts;
 
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import springbankingapp.bankingapp.dto.AccountDto;
-import springbankingapp.bankingapp.service.AccountService;
 
 import java.util.List;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package springbankingapp.bankingapp.dto;
+package springbankingapp.bankingapp.accounts;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,7 +1,6 @@
-package springbankingapp.bankingapp.service;
+package springbankingapp.bankingapp.accounts;
 
-import springbankingapp.bankingapp.dto.AccountDto;
-import springbankingapp.bankingapp.entity.Account;
+import springbankingapp.bankingapp.accounts.AccountDto;
 
 import java.util.List;
 

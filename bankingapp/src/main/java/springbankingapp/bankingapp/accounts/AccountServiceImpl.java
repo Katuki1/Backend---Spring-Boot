@@ -1,11 +1,11 @@
-package springbankingapp.bankingapp.service.implementation;
+package springbankingapp.bankingapp.accounts;
 
 import org.springframework.stereotype.Service;
-import springbankingapp.bankingapp.dto.AccountDto;
-import springbankingapp.bankingapp.entity.Account;
-import springbankingapp.bankingapp.mapper.AccountMapper;
-import springbankingapp.bankingapp.repository.AccountRepo;
-import springbankingapp.bankingapp.service.AccountService;
+import springbankingapp.bankingapp.accounts.AccountDto;
+import springbankingapp.bankingapp.accounts.Account;
+import springbankingapp.bankingapp.accounts.AccountMapper;
+import springbankingapp.bankingapp.accounts.AccountRepo;
+import springbankingapp.bankingapp.accounts.AccountService;
 
 import java.util.List;
 import java.util.stream.Collectors;

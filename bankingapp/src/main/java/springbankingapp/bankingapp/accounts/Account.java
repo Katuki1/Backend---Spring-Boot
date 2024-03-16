@@ -1,4 +1,4 @@
-package springbankingapp.bankingapp.entity;
+package springbankingapp.bankingapp.accounts;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,7 +1,4 @@
-package springbankingapp.bankingapp.mapper;
-
-import springbankingapp.bankingapp.dto.AccountDto;
-import springbankingapp.bankingapp.entity.Account;
+package springbankingapp.bankingapp.accounts;
 
 public class AccountMapper {
     public static Account mapToAccount(AccountDto accountDto){
