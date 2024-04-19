@@ -1,0 +1,206 @@
+~$git --version
+git version 2.43.0.windows.1
+~$mkdir cool-website
+~$cd c00l-website
+bash: cd: c00l-website: No such file or directory
+~$cd cool-website
+~/cool-website$git status
+fatal: not a git repository (or any of the parent directories): .git
+~/cool-website$git init
+Initialized empty Git repository in C:/Users/user/cool-website/.git/
+
+*******************************
+~/cool-website$git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+~/cool-website$git config --global user.name "Katuki"
+~/cool-website$git config --global user.email "katukifaith@gmail.com"
+~/cool-website$git commit
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+~/cool-website$vim readme.md
+~/cool-website$vim readme.md
+~/cool-website$vim readme.md
+~/cool-website$ls -a
+./  ../  .git/  readme.md
+~/cool-website$git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+~/cool-website$git add readme.md
+warning: in the working copy of 'readme.md', LF will be replaced by CRLF the next time Git touches it
+~/cool-website$^C
+~/cool-website$git init
+Reinitialized existing Git repository in C:/Users/user/cool-website/.git/
+
+*****************************************
+~/cool-website$git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.md
+
+~/cool-website$ls -a
+./  ../  .git/  readme.md
+~/cool-website$
+~/cool-website$git commit -m "My frst Commit"
+[master (root-commit) df8549d] My frst Commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.md
+~/cool-website$git status
+On branch master
+nothing to commit, working tree clean
+~/cool-website$vim index.html
+~/cool-website$vim readme.md
+
+********************************************
+~/cool-website$git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+~/cool-website$git add --all
+~/cool-website$git add .
+~/cool-website$git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        modified:   readme.md
+
+~/cool-website$git reset HEAD readme.md
+Unstaged changes after reset:
+M       readme.md
+
+***********************************************
+~/cool-website$git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+~/cool-website$git commit -m "Added html"
+[master ecc6b2b] Added html
+ 1 file changed, 4 insertions(+)
+ create mode 100644 index.html
+~/cool-website$git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+~/cool-website$git add .
+
+************************************************
+~/cool-website$git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   readme.md
+
+~/cool-website$git commit -m "Improved"
+[master 748dd81] Improved
+ 1 file changed, 1 insertion(+)
+~/cool-website$git status
+On branch master
+nothing to commit, working tree clean
+~/cool-website$git log
+commit 748dd81d1366dc45425736015b57a9fa341ecd3b (HEAD -> master)
+Author: Katuki <katukifaith@gmail.com>
+Date:   Mon Mar 18 09:35:38 2024 +0300
+
+    Improved
+
+commit ecc6b2b5d3660eeef97bdfb5f8d5d4aaf5719053
+Author: Katuki <katukifaith@gmail.com>
+Date:   Mon Mar 18 09:34:37 2024 +0300
+
+    Added html
+
+commit df8549d2de1588453f3cdf60a9228e5f10829d3a
+Author: Katuki <katukifaith@gmail.com>
+Date:   Mon Mar 18 09:17:36 2024 +0300
+
+    My frst Commit
+~/cool-website$git log --patch
+commit 748dd81d1366dc45425736015b57a9fa341ecd3b (HEAD -> master)
+Author: Katuki <katukifaith@gmail.com>
+Date:   Mon Mar 18 09:35:38 2024 +0300
+
+    Improved
+
+diff --git a/readme.md b/readme.md
+index fe8e1aa..8288e75 100644
+--- a/readme.md
++++ b/readme.md
+@@ -1,2 +1,3 @@
+ Hello, can you hear me?
+ This is Ken
++I am learning git^S
+
+commit ecc6b2b5d3660eeef97bdfb5f8d5d4aaf5719053
+Author: Katuki <katukifaith@gmail.com>
+Date:   Mon Mar 18 09:34:37 2024 +0300
+
+    Added html
+
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..a8e93e5
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,4 @@
++<html>
++       <body>
++               </body^S>
++</html>
+
+commit df8549d2de1588453f3cdf60a9228e5f10829d3a
+Author: Katuki <katukifaith@gmail.com>
+Date:   Mon Mar 18 09:17:36 2024 +0300
+
+    My frst Commit
+
+diff --git a/readme.md b/readme.md
+new file mode 100644
+index 0000000..fe8e1aa
+--- /dev/null
++++ b/readme.md
+@@ -0,0 +1,2 @@
++Hello, can you hear me?
++This is Ken
+(END)
+
+****************************************************
+COMMIT A FOLDER
+
+

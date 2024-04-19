@@ -1,5 +1,7 @@
 package springbankingapp.bankingapp.accounts;
 
+import java.util.Date;
+
 public class AccountMapper {
     public static Account mapToAccount(AccountDto accountDto){
         Account account = new Account(
@@ -7,6 +9,7 @@ public class AccountMapper {
                 accountDto.getAccountName(),
                 accountDto.getBalance()
         );
+        account.setTranDate(new Date());
         return account ;
     }
     public static AccountDto mapToAccountDto(Account account){

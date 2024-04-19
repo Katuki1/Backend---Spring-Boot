@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
+
 
 @Getter
 @Setter
@@ -22,4 +24,6 @@ public class Account {
     @Column(name= "account_name")
     private String accountName;
     private double balance;
+    @Column(name= "tran_date")
+    private Date tranDate;
 }

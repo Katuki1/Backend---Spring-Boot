@@ -1,0 +1,6 @@
+Spring Security
+https://www.youtube.com/watch?v=us0VjFiHogo
+
+docker compose module
+https://www.youtube.com/watch?v=lS1GwdIfk0c -with postgress
+https://www.youtube.com/watch?v=U2GCM0GBzNI -with mysql
